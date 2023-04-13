@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+
+    <style>
+      #receipt_content {
+        width: calc(100% - 40px);
+        font-weight: 600;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      table,
+      tr,
+      th {
+        border: 2px solid #000;
+        border-collapse: collapse;
+      }
+
+      .header {
+        height: 70px;
+        width: 100%;
+      }
+
+      .header_title {
+        text-transform: uppercase;
+        padding-right: 15%;
+        font-size: 20px;
+        font-weight: 600;
+      }
+
+      hr {
+        border: 1px solid #000;
+      }
+
+      p.title {
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 16px;
+      }
+
+      .content {
+        width: 100%;
+        margin-bottom: 10px;
+        text-align: left;
+        font-size: 22px;
+      }
+
+      .content tr th {
+        padding-left: 20px;
+      }
+
+      .shift_cashier {
+        display: flex;
+      }
+
+      .shift_cashier p {
+        font-weight: 400;
+        font-size: 18px;
+        width: 50%;
+      }
+
+      .shift_cashier p span {
+        margin-left: 15px;
+      }
+
+      .shift_cashier:nth-child(2) {
+        margin-left: 40%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- PAYMENT RECEIPT COPY -->
+
+    <div id="receipt_content">
+      <!-- HEADER AND LOGO -->
+
+      <table class="header">
+        <tr>
+          <th class="logo" style="width: 15%">
+            <img src="" alt="Logo" />
+          </th>
+          <th class="header_title">Federal Teaching Hospital, Gombe</th>
+        </tr>
+      </table>
+
+      <hr />
+
+      <p class="title">payment receipt copy (reprint)</p>
+
+      <hr />
+
+      <table class="content">
+        <tr>
+          <th style="width: 25%">Patient Number</th>
+          <th>Patient Name</th>
+        </tr>
+        <tr>
+          <th>PT125</th>
+          <th>Test125, Patient</th>
+        </tr>
+      </table>
+
+      <table class="content">
+        <tr>
+          <th>Receipt Number</th>
+          <th>Date</th>
+          <th>Time</th>
+        </tr>
+        <tr>
+          <th>SR17379</th>
+          <th>1/4/2023</th>
+          <th>11:56:24</th>
+        </tr>
+      </table>
+
+      <table class="content">
+        <tr>
+          <th>Name</th>
+          <th>Amt</th>
+          <th>Qty</th>
+        </tr>
+        <tr>
+          <th>Bicarbonate</th>
+          <th>750.00</th>
+          <th>1</th>
+        </tr>
+        <tr>
+          <th>Chlamydia Serology</th>
+          <th>5,300.00</th>
+          <th>1</th>
+        </tr>
+      </table>
+
+      <table class="content">
+        <tr>
+          <th>Gross Amount (N)</th>
+          <th>6,050.00</th>
+        </tr>
+        <tr>
+          <th>Deposit Allocated (N)</th>
+          <th>0.00</th>
+        </tr>
+        <tr>
+          <th>Waived Amount (N)</th>
+          <th>0.00</th>
+        </tr>
+        <tr>
+          <th>Discount Amount (N)</th>
+          <th>0.00</th>
+        </tr>
+        <tr>
+          <th>Amount Paid (N)</th>
+          <th>6,050.00</th>
+        </tr>
+        <tr>
+          <th>Payment Type</th>
+          <th>Cash</th>
+        </tr>
+      </table>
+
+      <div class="shift_cashier">
+        <p>Shift: <span>SH3271</span></p>
+        <p>Cashier: <span>anyi</span></p>
+      </div>
+    </div>
+    
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <!-- ORIGINAL DEPOSIT RECEIPT -->
+
+    <div id="receipt_content">
+      <!-- HEADER AND LOGO -->
+
+      <table class="header">
+        <tr>
+          <th class="logo" style="width: 15%">
+            <img src="" alt="Logo" />
+          </th>
+          <th class="header_title">Federal Teaching Hospital, Gombe</th>
+        </tr>
+      </table>
+
+      <hr />
+
+      <p class="title">original deposit receipt</p>
+
+      <hr />
+
+      <table class="content">
+        <tr>
+          <th style="width: 25%">Patient Number</th>
+          <th>Patient Name</th>
+        </tr>
+        <tr>
+          <th>PT008821</th>
+          <th>ANE, CHINEDU</th>
+        </tr>
+      </table>
+
+      <table class="content">
+        <tr>
+          <th>Receipt Number</th>
+          <th>Date</th>
+          <th>Time</th>
+        </tr>
+        <tr>
+          <th>DP3382</th>
+          <th>12/4/2023</th>
+          <th>10:03:16</th>
+        </tr>
+      </table>
+
+      <table class="content">
+        <tr>
+          <th>Description</th>
+          <th>Total Amount</th>
+        </tr>
+        <tr>
+          <th>Deposit</th>
+          <th>1,000.00</th>
+        </tr>
+      </table>
+
+      <table class="content">
+        <tr>
+          <th style="width: 25%">Cash Point</th>
+          <th>OUT-PATIENT-PHARMACY</th>
+        </tr>
+      </table>
+
+      <table class="content">
+        <tr>
+          <th style="width: 25%">Payment Type</th>
+          <th>EFT</th>
+        </tr>
+      </table>
+
+      <div class="shift_cashier">
+        <p>Shift: <span>SH3289</span></p>
+        <p>Cashier: <span>superadmin</span></p>
+      </div>
+    </div>
+  </body>
+</html>
